@@ -12,5 +12,10 @@ namespace BiosphereWebApplication.Controllers
         {
             return View();
         }
+
+        public IActionResult SimpleMapTest()
+        {
+            return View();
+        }
     }
 }

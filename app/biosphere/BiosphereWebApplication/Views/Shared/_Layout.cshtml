@@ -26,13 +26,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">My World</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">My World</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Dev</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dev" asp-action="Index">Dev</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">About</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">About</a>
                         </li>
                     </ul>
                 </div>
@@ -42,6 +42,8 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+
+            @RenderSection("ScriptInBody", required: false)
         </main>
     </div>
 
@@ -53,6 +55,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/shared/CommonScripts.js"></script>
+    <script src="~/js/project/bsproject.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
