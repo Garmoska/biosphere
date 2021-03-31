@@ -3,8 +3,8 @@
     <script>
         var config = {
             type: Phaser.AUTO,
-            width: 6 * 256,
-            height: 6 * 256,
+            width: 800,
+            height: 600,
             backgroundColor: "#2d2d2d",
             parent: "phaser-example",
             pixelArt: true,
@@ -20,11 +20,9 @@
         var game = new Phaser.Game(config);
 
         function preload() {
-            this.load.path = window.location.protocol + "//" + window.location.host;
-            
-            //this.load.setBaseURL(window.location.hostname);
-            this.load.tilemapCSV("map", "/assets/maps/simple.csv");
-            this.load.image("ground", "/assets/ground/ground.png");
+            this.load.path = commonscripts.getAssetsPath();
+            this.load.tilemapCSV("map", "/maps/simple.csv");
+            this.load.image("ground", "/ground/ground.png");
         }
 
         function create () {

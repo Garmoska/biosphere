@@ -326,6 +326,10 @@
                 data.push({ id: rows[rowNum][idField], text: rows[rowNum][textField] });
             }
             return data;
+        },
+
+        getAssetsPath: function() {
+            return window.location.protocol + "//" + window.location.host + "/assets";
         }
     });
 })(window.commonscripts || {}, jQuery);

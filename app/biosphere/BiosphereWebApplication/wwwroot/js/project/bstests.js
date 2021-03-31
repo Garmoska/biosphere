@@ -2,8 +2,12 @@
     $.bstests = $.bstests || {};
 
     $.extend($.bstests, {
-        runSimpleMapTest: function () {
+        runSimpleMap: function () {
             commonscripts.redirectTo("/Dev/SimpleMapTest", true);
+        },
+
+        runSheepAnimation: function () {
+            commonscripts.redirectTo("/Dev/SheepAnimation", true);
         }
     });
 })(jQuery);

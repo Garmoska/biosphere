@@ -1,0 +1,103 @@
+﻿@section ScriptInBody
+{
+    <script>
+        var sheep = null;
+        var cursors = null;
+
+        var config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            physics: {
+                default: "arcade",
+                arcade: {
+                    debug: false
+                }
+            },
+            scene: {
+                preload: preload,
+                create: create,
+                update: update
+            }
+        };
+
+        var game = new Phaser.Game(config);
+
+        function preload ()
+        {
+            this.load.path = commonscripts.getAssetsPath();
+            this.load.spritesheet("sheep", "/animals/sheep_sprite/sheep.png", { frameWidth: 128, frameHeight: 128 }); //"/animals/sheep_sprite/sheep.json"
+        }
+
+        function create ()
+        {
+            var help = this.add.text(16, 16, "Press arrow keys to move the sheep. Press Space to stop it.", {
+                fontSize: "18px",
+                fill: "#ffffff"
+            });
+
+            help.setScrollFactor(0);
+
+            sheep = this.physics.add.sprite(100, 450, "sheep");
+            sheep.setBounce(0.2);
+            sheep.setCollideWorldBounds(true);
+
+            this.anims.create({
+                key: "up",
+                frames: this.anims.generateFrameNumbers("sheep", { start: 0, end: 3 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            this.anims.create({
+                key: "left",
+                frames: this.anims.generateFrameNumbers("sheep", { start: 4, end: 7 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            this.anims.create({
+                key: "down",
+                frames: this.anims.generateFrameNumbers("sheep", { start: 8, end: 11 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            this.anims.create({
+                key: "right",
+                frames: this.anims.generateFrameNumbers("sheep", { start: 12, end: 15 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            cursors = this.input.keyboard.createCursorKeys();
+        }
+
+        function update ()
+        {
+            if (cursors.up.isDown)
+            {
+                sheep.setVelocityY(-160);
+                sheep.anims.play("up", true);
+            }
+            else if (cursors.left.isDown)
+            {
+                sheep.setVelocityX(-160);
+                sheep.anims.play("left", true);
+            }
+            else if (cursors.down.isDown) {
+                sheep.setVelocityY(160);
+                sheep.anims.play("down", true);
+            }
+            else if (cursors.right.isDown) {
+                sheep.setVelocityX(160);
+                sheep.anims.play("right", true);
+            }
+            else if (cursors.space.isDown) {
+                sheep.setVelocityX(0);
+                sheep.setVelocityY(0);
+                sheep.anims.stop();
+            }
+        }
+    </script>
+}

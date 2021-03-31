@@ -1,8 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BiosphereWebApplication.Controllers
 {
@@ -14,6 +10,11 @@ namespace BiosphereWebApplication.Controllers
         }
 
         public IActionResult SimpleMapTest()
+        {
+            return View();
+        }
+
+        public IActionResult SheepAnimation()
         {
             return View();
         }

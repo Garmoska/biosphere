@@ -1,9 +1,10 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
+/.vs/
 /.vs/slnx.sqlite
 /.vs/ProjectSettings.json
 *.suo
+/app/biosphere/.vs
 /app/biosphere/BiosphereWebApplication/bin
 /app/biosphere/BiosphereWebApplication/obj
