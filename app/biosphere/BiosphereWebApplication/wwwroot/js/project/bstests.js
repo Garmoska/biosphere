@@ -3,11 +3,15 @@
 
     $.extend($.bstests, {
         runSimpleMap: function () {
-            commonscripts.redirectTo("/Dev/SimpleMapTest", true);
+            commonscripts.redirectTo("/Dev/SimpleMap", true);
         },
 
-        runSheepAnimation: function () {
-            commonscripts.redirectTo("/Dev/SheepAnimation", true);
+        runAnimalAnimation: function () {
+            commonscripts.redirectTo("/Dev/AnimalAnimation", true);
+        },
+
+        runBushGrowing: function () {
+            commonscripts.redirectTo("/Dev/BushGrowing", true);
         }
     });
 })(jQuery);

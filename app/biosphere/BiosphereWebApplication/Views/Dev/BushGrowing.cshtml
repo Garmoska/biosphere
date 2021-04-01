@@ -1,0 +1,86 @@
+﻿<div class="k-content wide">
+    <input id="slider" style="width: 50%" value="0" />
+</div>
+<div id="renderPlaceholder">
+</div>
+
+<script>
+    $(document).ready(function () {
+        let step = (maxSize - minSize) * Math.pow(10, -1);
+        $("#slider").kendoSlider({
+            //increaseButtonTitle: "Right",
+            //decreaseButtonTitle: "Left",
+            min: minSize,
+            max: maxSize,
+            smallStep: step,
+            //largeStep: 1,
+            change: function (e) {
+                sizeLabel.text = `Size: ${e.value}`;
+                for (let i = 0; i < sprites.length; i++) {
+                    sprites[i].setScale(e.value);
+                }
+            },
+            value: minSize
+        }).data("kendoSlider");
+    });
+</script>
+
+@section ScriptInBody
+{
+    <script>
+        var sizeLabel = null;
+        var sprites = [];
+        const minSize = 0.0625;
+        const maxSize = 0.125;
+
+        var config = {
+            type: Phaser.AUTO,
+            width: 1200,
+            height: 500,
+            backgroundColor: "#458f56",
+            physics: {
+                default: "arcade",
+                arcade: {
+                    debug: false
+                }
+            },
+            scene: {
+                preload: preload,
+                create: create,
+                update: update
+            },
+            parent: "renderPlaceholder"
+        };
+
+        var game = new Phaser.Game(config);
+
+        function preload () {
+            this.load.path = commonscripts.getAssetsPath();
+            for (let i = 1; i <= 4; i++) {
+                let spriteName = `Bush (${i})`;
+                this.load.image(spriteName, `/objects/${spriteName}.png`);
+            }
+        }
+
+        function create ()
+        {
+            sizeLabel = this.add.text(16, 48, "", {fontSize: "18px", fill: "#ffffff" });
+            sizeLabel.setScrollFactor(0);
+
+            let xCoord = 10;
+            for (let i = 1; i <= 4; i++) {
+                //TODO use this.physics.add.staticGroup(); ?
+                let sp = this.add.sprite(xCoord, 30, `Bush (${i})`);
+                sp.setOrigin(0, 0).setScale(minSize);
+                sprites.push(sp);
+                
+                //.refreshBody()
+                xCoord += 250;
+            }
+        }
+
+        function update () {
+            
+        }
+    </script>
+}

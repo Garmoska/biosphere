@@ -9,12 +9,22 @@ namespace BiosphereWebApplication.Controllers
             return View();
         }
 
-        public IActionResult SimpleMapTest()
+        public IActionResult SimpleMap()
         {
             return View();
         }
 
-        public IActionResult SheepAnimation()
+        public IActionResult AnimalAnimation()
+        {
+            return View();
+        }
+
+        public IActionResult GUITest()
+        {
+            return View();
+        }
+
+        public IActionResult BushGrowing()
         {
             return View();
         }

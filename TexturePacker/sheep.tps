@@ -181,22 +181,22 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-0.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-1.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-10.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-11.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-12.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-13.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-14.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-15.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-2.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-3.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-4.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-5.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-6.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-7.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-8.png</key>
-            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep/sheep_walk-9.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-0.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-1.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-10.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-11.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-12.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-13.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-14.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-15.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-2.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-3.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-4.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-5.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-6.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-7.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-8.png</key>
+            <key type="filename">../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-9.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -214,7 +214,22 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-0.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-1.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-10.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-11.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-12.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-13.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-14.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-15.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-2.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-3.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-4.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-5.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-6.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-7.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-8.png</filename>
+            <filename>../app/biosphere/BiosphereWebApplication/wwwroot/assets/animals/sheep_source/sheep_walk-9.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

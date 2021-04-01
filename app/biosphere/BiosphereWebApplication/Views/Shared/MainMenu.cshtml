@@ -1,0 +1,30 @@
+﻿<header role="navigation">
+    <nav class="navbar navbar-expand-lg bg-light nav-pills nav-fill">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            Biosphere
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarNavAltMarkup" aria-controls="navBarNavAltMarkup" area-expanded="false" area-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">My World</a>
+                <a class="nav-item nav-link" asp-area="" asp-controller="Dev" asp-action="Index">Dev</a>
+            </div>
+        </div>
+        <div class="float-right">
+            <ul class="navbar-nav">
+                @*
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="Identity" asp-controller="Account" asp-action="Index" title="@User.SadrUserISID()">@User.Identity.Name</a>
+                </li>
+                <li class="nav-item">
+                    <div class="form-inline" asp-area="Identity" asp-controller="Account" asp-action="Logout">
+                        <button type="button" class="nav-link btn btn-link text-dark" onclick="projectScripts.logout()">Logout</button>
+                    </div>
+                </li>
+                *@
+            </ul>
+        </div>
+    </nav>
+</header>
